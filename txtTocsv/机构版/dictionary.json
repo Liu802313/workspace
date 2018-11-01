@@ -1,0 +1,7 @@
+﻿{
+	"交易结算单（逐笔）": "Settlement Bill(Float-to-market)",
+	"期货客户帐单_资金清单": "List of CNY",
+	"期货客户帐单_成交记录单": "List of trade",
+"资产账号":"Client ID",
+"客户简称":"Client Name"
+}

@@ -1,0 +1,507 @@
+{
+    "trade": {
+        "Account": [
+            {
+                "type": "common",
+                "table": "期货客户帐单_成交记录单",
+                "column": "资产帐号"
+            },
+            {
+                "type": "common",
+                "table": "成交记录",
+                "column": "客户号"
+            }
+        ],
+        "Custom Account Name": [
+            {
+                "type": "translate",
+                "table": "期货客户帐单_成交记录单",
+                "column": "资产帐号"
+            },
+            {
+                "type": "translate",
+                "table": "成交记录",
+                "column": "客户号"
+            }
+        ],
+        "Account Name": [
+            {
+                "type": "translate",
+                "table": "期货客户帐单_成交记录单",
+                "column": "资产帐号"
+            },
+            {
+                "type": "translate",
+                "table": "成交记录",
+                "column": "客户号"
+            }
+        ],
+        "Buy": [
+            {
+                "type": "translate",
+                "table": "期货客户帐单_成交记录单",
+                "column": "买／卖"
+            },
+            {
+                "type": "translate",
+                "table": "成交记录",
+                "column": "买/卖"
+            }
+        ],
+        "Sell": [
+            {
+                "type": "translate",
+                "table": "期货客户帐单_成交记录单",
+                "column": "买／卖"
+            },
+            {
+                "type": "translate",
+                "table": "成交记录",
+                "column": "买/卖"
+            }
+        ],
+        "Trade Price": [
+            {
+                "type": "common",
+                "table": "期货客户帐单_成交记录单",
+                "column": "成交价格"
+            },
+            {
+                "type": "common",
+                "table": "成交记录",
+                "column": "成交价"
+            }
+        ],
+        "CCY": "CNY",
+        "Trade Date": [
+            {
+                "type": "common",
+                "table": "期货客户帐单_成交记录单",
+                "column": "成交日期"
+            },
+            {
+                "type": "common",
+                "table": "成交记录",
+                "column": "成交日期"
+            }
+        ],
+        "Statement Date": [
+            {
+                "type": "common",
+                "table": "期货客户帐单_成交记录单",
+                "column": "成交日期"
+            },
+            {
+                "type": "common",
+                "table": "成交记录",
+                "column": "成交日期"
+            }
+        ],
+        "Volume": [
+            {
+                "type": "common",
+                "table": "期货客户帐单_成交记录单",
+                "column": "手数"
+            },
+            {
+                "type": "common",
+                "table": "成交记录",
+                "column": "手数"
+            }
+        ],
+        "Exchange Name": [
+            {
+                "type": "translate",
+                "table": "期货客户帐单_成交记录单",
+                "column": "交易所"
+            },
+            {
+                "type": "translate",
+                "table": "成交记录",
+                "column": "交易所"
+            }
+        ],
+        "Contract Code": [
+            {
+                "type": "common",
+                "table": "期货客户帐单_成交记录单",
+                "column": "合约代码"
+            },
+            {
+                "type": "common",
+                "table": "成交记录",
+                "column": "合约"
+            }
+        ],       
+        "Clearing Fees": [
+            {
+                "type": "common",
+                "table": "期货客户帐单_成交记录单",
+                "column": "手续费"
+            },
+            {
+                "type": "common",
+                "table": "成交记录",
+                "column": "手续费"
+            }
+        ],
+        "Commission CCY": "CNY",
+        "Exchange Fee CCY": "CNY"
+    },
+    "position": {
+        "Account Name": [
+            {
+                "type":"translate",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "资产帐号"
+            },
+            {
+                "type":"translate",
+                "table": "持仓汇总",
+                "column": "客户号"
+            }
+        ],
+        "Custom Account Name": [
+            {
+                "type":"translate",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "资产帐号"
+            },
+            {
+                "type":"translate",
+                "table": "持仓汇总",
+                "column": "客户号"
+            }
+        ],
+        "Sum Net Position": [
+            {
+                "type":"sub",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": ["买手","卖手"]
+            },
+            {
+                "type":"sub",
+                "table": "持仓汇总",
+                "column": ["买持","卖持"]
+            }
+        ],
+        "Sum Long Position": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "买手"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "买持"
+            }
+        ],
+        "Sum Short Position": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "卖手"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "卖持"
+            }
+        ],
+        "Account": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "资产帐号"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "客户号"
+            }
+        ],
+        "Statement Date": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "结算日"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "结算日"
+            }
+        ],
+        "CCY":"CNY",
+        "Contract Code": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "合约代码"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "合约"
+            }
+        ],
+        "Settlement Price": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "今结算价"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "今结算"
+            }
+        ],
+        "Sum Unrealized P&L": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "持仓盈亏"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "浮动盈亏"
+            }
+        ],
+        "Avg Buy Price": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "买价"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "买均价"
+            }
+        ],
+        "Avg Sell Price": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "卖价"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "卖均价"
+            }
+        ],
+        "Prev. Sttl": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "昨结算价"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "昨结算"
+            }
+        ],
+        "Sttl Today": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_持仓盈亏单",
+                "column": "今结算价"
+            },
+            {
+                "type":"common",
+                "table": "持仓汇总",
+                "column": "今结算"
+            }
+        ]
+    },
+    "balance": {
+        "Account": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "资产帐号"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "客户号"
+            }
+        ],
+        "Statement Date": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "结算日"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "结算日"
+            }
+        ],
+        "CCY": "CNY",
+        "Opening Balance": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "上日结存"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "期初结存"
+            }
+        ],
+        "Commission": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "期间手续费"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "手续费"
+            }
+        ],
+        "Journal Items": [
+            {
+                "type":"sub",
+                "table": "期货客户帐单_资金清单",
+                "column": ["期间入金","期间出金"]
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "出入金"
+            }
+        ],
+        "Gross Realised Profit Loss": [
+            {
+                "type":"add",
+                "table": "期货客户帐单_资金清单",
+                "column": ["浮动盈亏","平仓盈亏（含交割盈亏）"]
+            },
+            {
+                "type":"add",
+                "table": "资金状况",
+                "column": ["浮动盈亏","平仓盈亏"]
+            }
+        ],
+        "Closing Balance": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "当日结存"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "期末结存"
+            }
+        ],
+        "Total Equity": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "客户权益"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "客户权益"
+            }
+        ],
+        "Initial Margin Requirement": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "保证金占用"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "保证金占用"
+            }
+        ],
+        "Maintenance Margin Requirement": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "可用资金"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "可用资金"
+            }
+        ],
+        "Account Type":"CNY",
+        "Transaction Source Type":"CNY",
+        "AFR Excess Cash Equity": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "可用资金"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "可用资金"
+            }
+        ],
+        "Custom Account Name": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "资产帐号"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "客户号"
+            }
+        ],
+        "Account Name": [
+            {
+                "type":"translate",
+                "table": "期货客户帐单_资金清单",
+                "column": "资产帐号"
+            },
+            {
+                "type":"translate",
+                "table": "资金状况",
+                "column": "客户号"
+            }
+        ],
+        "Risk Level": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "风险度"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "风险度"
+            }
+        ],
+        "Pledge Amount": [
+            {
+                "type":"common",
+                "table": "期货客户帐单_资金清单",
+                "column": "质押金"
+            },
+            {
+                "type":"common",
+                "table": "资金状况",
+                "column": "质押金"
+            }
+        ]
+    }
+}
